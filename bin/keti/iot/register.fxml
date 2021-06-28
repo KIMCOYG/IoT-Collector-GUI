@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="registerPane" prefHeight="504.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="keti.iot.registerController">
+	<content>
+		<VBox fx:id="contentVbox" prefHeight="495.0" prefWidth="598.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Label text="Register">
+               <font>
+                  <Font name="HCR Dotum" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="141.0" prefWidth="598.0" styleClass="lineChartLabel" stylesheets="@css/fullpackstyling.css">
+               <graphic>
+                  <GridPane alignment="TOP_CENTER" prefHeight="119.0" prefWidth="548.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.3333740234375" minWidth="10.0" prefWidth="99.666748046875" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="576.3332742055258" minWidth="10.0" prefWidth="497.66658528645837" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="74.33331298828125" minHeight="10.0" prefHeight="49.33334445953369" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="121.66665267944336" minHeight="10.0" prefHeight="52.66665554046631" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="121.66665267944336" minHeight="10.0" prefHeight="52.66665554046631" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="100.0" text="ID">
+                           <font>
+                              <Font name="HCR Dotum" size="18.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" prefHeight="27.0" prefWidth="101.0" text="IP" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="HCR Dotum" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="idField" GridPane.columnIndex="1" />
+                        <TextField fx:id="ipField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="14.0" prefWidth="99.0" text="Sensor" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="HCR Dotum" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="sensorField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                     </children>
+                  </GridPane>
+               </graphic>
+            </Label>
+            <Button fx:id="registButton" mnemonicParsing="false" onMouseClicked="#registClick" prefHeight="22.0" prefWidth="600.0" text="Regist" />
+            <Label text="List">
+               <font>
+                  <Font name="HCR Dotum" size="24.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="171.0" prefWidth="598.0" styleClass="lineChartLabel" stylesheets="@css/fullpackstyling.css">
+               <graphic>
+                  <ListView fx:id="registList" onMouseClicked="#listViewClick" prefHeight="80.0" prefWidth="598.0" style="-fx-background-color: transparent;" />
+               </graphic>
+            </Label>
+            <Label text="Label" textFill="TRANSPARENT" />
+         </children></VBox>
+	</content>
+</ScrollPane>

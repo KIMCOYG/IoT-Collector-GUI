@@ -1,0 +1,67 @@
+.button3
+{
+    -fx-background-color :  #333645;
+    -fx-background-radius :  0 0 0 0;
+    -fx-padding : 0 0 0 0;
+}
+.button3:hover
+{
+    -fx-background-color : #3C3C3C ;
+    -fx-padding : 0 0 0 0;
+}
+.button3:pressed
+{
+    -fx-background-color : #1E202C ;
+    -fx-padding : 0 0 0 0;
+}
+
+.lineChartLabel
+{
+    -fx-background-color :  #E6EED5;
+    -fx-background-radius :  20 20 20 20;
+    -fx-padding : 0 0 0 0;
+}
+
+.chart {
+    -fx-padding: 10px;
+}
+.chart-content {
+    -fx-padding: 30px;    
+}
+ 
+.chart-title {
+  -fx-text-fill: #4682b4;
+  -fx-font-size: 1.6em;
+}
+ 
+.axis-label {
+  -fx-text-fill: #4682b4;
+}
+ 
+.chart-legend {
+   -fx-background-color:  transparent;
+   -fx-padding: 20px;
+}
+ 
+.chart-legend-item-symbol{
+   -fx-background-radius: 0;
+}
+ 
+.chart-legend-item{
+    -fx-text-fill: #191970;
+}
+ 
+.chart-plot-background {
+    -fx-background-color: transparent;
+}
+.chart-vertical-grid-lines {
+    -fx-stroke: #3278fa;
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: #3278fa;
+}
+.chart-alternative-row-fill {
+    -fx-fill: transparent;
+    -fx-stroke: transparent;
+    -fx-stroke-width: 0;
+}

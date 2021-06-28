@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<fx:root fx:id="root" prefHeight="600.0" prefWidth="800.0" type="AnchorPane" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="334.0" layoutY="486.0" prefHeight="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <VBox prefHeight="600.0" prefWidth="150.0">
+               <children>
+                  <ImageView fitHeight="70.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="false">
+                     <image>
+                        <Image url="@image/cloudedge%20IoT.PNG" />
+                     </image></ImageView>
+                  <Pane prefHeight="534.0" prefWidth="200.0" style="-fx-background-color: #333645;">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="33.0" prefWidth="200.0" style="-fx-background-color: #333645;" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="HCR Dotum Bold" size="27.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="33.0" fitWidth="140.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/Welcome.PNG" />
+                                 </image>
+                              </ImageView>
+                           </graphic></Label>
+                        <Button fx:id="infoButton" onMouseClicked="#infoClick" alignment="CENTER_LEFT" contentDisplay="LEFT" depthTest="DISABLE" ellipsisString="" graphicTextGap="0.0" layoutY="35.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="button3" stylesheets="@css/fullpackstyling.css">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="false">
+                                 <image>
+                                    <Image url="@image/info.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="registButton" onMouseClicked="#registClick" alignment="CENTER_LEFT" contentDisplay="LEFT" depthTest="DISABLE" ellipsisString="" graphicTextGap="0.0" layoutY="75.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="200.0" styleClass="button3" stylesheets="@css/fullpackstyling.css">
+                           <graphic>
+                              <ImageView fitHeight="32.0" fitWidth="117.0" pickOnBounds="true" preserveRatio="false">
+                                 <image>
+                                    <Image url="@image/Regi.png" />
+                                 </image></ImageView>
+                           </graphic>
+                        </Button>
+                        
+                     </children>
+                  </Pane>
+               </children></VBox>
+            <VBox prefHeight="600.0" prefWidth="650.0">
+               <children>
+                  <Label prefHeight="82.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;" textAlignment="CENTER">
+                     <font>
+                        <Font name="HCR Dotum Bold" size="27.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="39.0" fitWidth="238.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/DashBoard.PNG" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Line endX="498.0" startX="-100.0" stroke="#b9b9b9" />
+                  <StackPane fx:id="contentPane" prefHeight="504.0" prefWidth="600.0" style="-fx-background-color: #FFFFFF;">
+                     
+                  </StackPane>
+                  <Label fx:id="infoLabel" alignment="CENTER" prefHeight="17.0" prefWidth="601.0" style="-fx-background-color: #333645;" text="Welcome" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="HCR Dotum Bold" size="27.0" />
+                     </font>
+                  </Label>
+               </children></VBox>
+         </children></HBox>
+   </children>
+</fx:root>
